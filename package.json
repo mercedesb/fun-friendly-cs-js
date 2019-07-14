@@ -1,0 +1,13 @@
+{
+  "name": "fun-friendly-cs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mercedes Bernard <mercedesrbernard@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "http-server"
+  }
+}
