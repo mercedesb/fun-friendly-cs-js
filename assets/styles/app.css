@@ -167,3 +167,7 @@ fieldset {
 .Set {
   margin-right: 2em;
 }
+
+.TreeContainer {
+  display: flex;
+}

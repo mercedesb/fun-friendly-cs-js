@@ -10,6 +10,7 @@
     <script type="module" src="linked-list/linked-list-example.js"></script>
     <script type="module" src="stack/stack-example.js"></script>
     <script type="module" src="queue/queue-example.js"></script>
+    <script type="module" src="tree/tree-example.js"></script>
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
@@ -171,6 +172,55 @@
           <button class="QueueButton--dequeue">Get THAT bacon!</button>
           <h2>Our Bacon Line</h2>
           <div class="Queue">Nobody wants bacon yet :(</div>
+        </section>
+        <section class="Screen Screen--yellow">
+          <div class="Screen-header">
+            <img
+              class="Screen-thumbnail"
+              src="assets/images/TriwizardTree.png"
+              alt="A tree representation of Harry and Cedric's path through the Triwizard maze"
+            />
+            <h2>Let's win the triwizard cup! - Binary Tree example</h2>
+          </div>
+          <div class="TreeContainer">
+            <div>
+              <h3>Let's see the possible routes</h3>
+              <button class="TreeButton--HarryWorstIteratively">
+                Harry's worst route - iteratively
+              </button>
+              <button class="TreeButton--HarryWorstRecursively">
+                Harry's worst route - recursively
+              </button>
+              <button class="TreeButton--HarryBestIteratively">
+                Harry's best route - iteratively
+              </button>
+              <button class="TreeButton--HarryBestRecursively">
+                Harry's best route - recursively
+              </button>
+              <br />
+              <button class="TreeButton--CedricWorstIteratively">
+                Cedric's worst route - iteratively
+              </button>
+              <button class="TreeButton--CedricWorstRecursively">
+                Cedric's worst route - recursively
+              </button>
+              <button class="TreeButton--CedricBestIteratively">
+                Cedric's best route - iteratively
+              </button>
+              <button class="TreeButton--CedricBestRecursively">
+                Cedric's best route - recursively
+              </button>
+              <div class="Tree">
+                You haven't chosen anyone to go through the maze yet :(
+              </div>
+            </div>
+            <div>
+              <img
+                src="assets/images/TriwizardTree.png"
+                alt="A tree representation of Harry and Cedric's path through the Triwizard maze"
+              />
+            </div>
+          </div>
         </section>
         <div class="ButtonContainer">
           <button class="Button PrevButton" disabled="disabled">Prev</button>
