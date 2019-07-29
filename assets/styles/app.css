@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  font-size: 18px;
+}
+
+body {
+  min-height: 100%;
+  /* overflow: hidden; */
+  font-family: "Poppins";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0.5em 0;
+}
+
+h1,
+h2 {
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+button {
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  border-image: none;
+  box-shadow: none;
+  font-family: "Poppins";
+  font-size: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+input {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family: "Poppins";
+  padding: 0.5em;
+  border-radius: 3px;
+  border-image: none;
+  box-shadow: none;
+  border-style: none;
+}
+
+input[type="text"] {
+  width: 400px;
+}
+
+input[type="number"] {
+  width: 75px;
+}
+
+label {
+  display: block;
+  margin-right: 1em;
+}
+
+legend {
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border: none;
+}
+
+/* since fieldset elements can't be flex containers in most browsers */
+.Fieldset {
+  display: flex;
+}
+
+.App {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-title {
+  text-align: center;
+  background-color: #524948;
+  color: white;
+  flex: 0 1 auto;
+}
+
+.ScreenContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.Screen {
+  display: none;
+  flex: 1 1 auto;
+  padding: 2em 2em 5em 2em;
+}
+
+.Screen--active {
+  display: block;
+}
+
+.Screen--yellow {
+  background-color: #bf8b24;
+  color: white;
+}
+
+.Screen--purple {
+  background-color: #564e58;
+  color: white;
+}
+
+.Screen--red {
+  background-color: #904e55;
+  color: white;
+}
+
+.Screen-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.Screen-thumbnail {
+  max-width: 100px;
+  margin-right: 1em;
+}
+
+.ButtonContainer {
+  position: relative;
+}
+
+.PrevButton {
+  position: absolute;
+  left: 2em;
+  bottom: 0.5em;
+}
+
+.NextButton {
+  position: absolute;
+  right: 2em;
+  bottom: 0.5em;
+}

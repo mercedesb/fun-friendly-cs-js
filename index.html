@@ -1,0 +1,61 @@
+<html lang="en-US">
+  <head>
+    <title>Fun, Friendly CS</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+  </head>
+  <body>
+    <main class="App">
+      <h1 class="App-title">Fun, Friendly CS</h1>
+      <div class="ScreenContainer">
+        <div class="ButtonContainer">
+          <button class="Button PrevButton" disabled="disabled">Prev</button>
+          <button class="Button NextButton">Next</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      let activeScreenIndex = 0;
+
+      function setActiveScreen() {
+        const screens = document.querySelectorAll(".Screen");
+        for (screen of screens) {
+          screen.classList.remove("Screen--active");
+        }
+
+        screens[activeScreenIndex].classList.add("Screen--active");
+      }
+
+      function setDisabledStateOfButtons() {
+        const screens = document.querySelectorAll(".Screen");
+
+        if (activeScreenIndex === 0) {
+          document.querySelector(".PrevButton").disabled = "disabled";
+        } else {
+          document.querySelector(".PrevButton").disabled = "";
+        }
+        const numberOfScreens = screens.length;
+        if (activeScreenIndex >= numberOfScreens - 1) {
+          document.querySelector(".NextButton").disabled = "disabled";
+        } else {
+          document.querySelector(".NextButton").disabled = "";
+        }
+      }
+
+      document
+        .querySelector(".NextButton")
+        .addEventListener("click", function(e) {
+          activeScreenIndex++;
+          setActiveScreen();
+          setDisabledStateOfButtons();
+        });
+
+      document
+        .querySelector(".PrevButton")
+        .addEventListener("click", function(e) {
+          activeScreenIndex--;
+          setActiveScreen();
+          setDisabledStateOfButtons();
+        });
+    </script>
+  </body>
+</html>
