@@ -13,6 +13,7 @@
     <script type="module" src="tree/tree-example.js"></script>
     <script type="module" src="encapsulation/encapsulation-example.js"></script>
     <script type="module" src="abstraction/abstraction-example.js"></script>
+    <script type="module" src="inheritance/inheritance-example.js"></script>
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
@@ -258,6 +259,59 @@
           <button class="AbstractionButton--volumeDown">Volume Down</button>
           <h2>Our TV</h2>
           <div class="Abstraction">The TV is off.</div>
+        </section>
+        <section class="Screen Screen--red">
+          <div class="Screen-header">
+            <img
+              class="Screen-thumbnail"
+              src="assets/images/Plant.png"
+              alt="Line drawing of a plant"
+            />
+            <h2>Let's plant a garden! - Inheritance example</h2>
+          </div>
+          <form class="InheritanceForm">
+            <fieldset>
+              <legend>
+                <h3>What kind of light does your garden get?</h3>
+              </legend>
+              <div class="Fieldset">
+                <div>
+                  <label for="sun">My garden is sunny</label>
+                  <input type="radio" name="lightNeeds" id="sun" value="sun" />
+                </div>
+                <div>
+                  <label for="shade">My garden is shady</label>
+                  <input
+                    type="radio"
+                    name="lightNeeds"
+                    id="shade"
+                    value="shade"
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h3>How does your garden handle moisture ?</h3>
+              </legend>
+              <div class="Fieldset">
+                <div>
+                  <label for="wet">My garden stays wet</label>
+                  <input type="radio" name="waterNeeds" id="wet" value="wet" />
+                </div>
+                <div>
+                  <label for="dry">My garden stay dry</label>
+                  <input type="radio" name="waterNeeds" id="dry" value="dry" />
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit">
+              Learn about plants that work in my garden!
+            </button>
+          </form>
+          <div class="Inheritance">
+            You haven't picked your garden type yet :(
+          </div>
         </section>
         <div class="ButtonContainer">
           <button class="Button PrevButton" disabled="disabled">Prev</button>
