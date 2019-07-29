@@ -1,12 +1,50 @@
 <html lang="en-US">
   <head>
     <title>Fun, Friendly CS</title>
+    <script
+      type="module"
+      src="big-o-notation/big-o-notation-example.js"
+    ></script>
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
     <main class="App">
       <h1 class="App-title">Fun, Friendly CS</h1>
       <div class="ScreenContainer">
+        <section class="Screen Screen--purple Screen--active">
+          <div class="Screen-header">
+            <img
+              class="Screen-thumbnail"
+              src="assets/images/Cupcake.png"
+              alt="Line drawing of a cupcake"
+            />
+            <h2>Let's make cupcakes! - Big O Notation example</h2>
+          </div>
+          <button class="BigOButton BigOButton--step1">Preheat oven</button>
+          <button class="BigOButton BigOButton--step2" disabled="disabled">
+            Combine butter and sugar
+          </button>
+          <button class="BigOButton BigOButton--step3" disabled="disabled">
+            Add eggs
+          </button>
+          <button class="BigOButton BigOButton--step4" disabled="disabled">
+            Combine flour and baking powder
+          </button>
+          <button class="BigOButton BigOButton--step5" disabled="disabled">
+            Slowly add milk and flour to butter mixture
+          </button>
+          <button class="BigOButton BigOButton--step6" disabled="disabled">
+            Bake
+          </button>
+          <button
+            class="BigOButton BigOButton--step7 BigOButton--last"
+            disabled="disabled"
+          >
+            Frost with Fibonacci number
+          </button>
+          <h2>Our baking progress</h2>
+          <div class="BigONotation">You haven't started baking yet :(</div>
+        </section>
         <div class="ButtonContainer">
           <button class="Button PrevButton" disabled="disabled">Prev</button>
           <button class="Button NextButton">Next</button>
