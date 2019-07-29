@@ -7,6 +7,7 @@
     ></script>
     <script type="module" src="set-theory/set-theory-example.js"></script>
     <script type="module" src="recursion/recursion-example.js"></script>
+    <script type="module" src="linked-list/linked-list-example.js"></script>
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
@@ -114,6 +115,28 @@
           <button class="RecursionButton--count">Count</button>
           <h2>Our Nesting Dolls</h2>
           <div class="Recursion">We haven't counted yet :(</div>
+        </section>
+        <section class="Screen Screen--yellow">
+          <div class="Screen-header">
+            <img
+              class="Screen-thumbnail"
+              src="assets/images/ScavengerHunt.png"
+              alt="Line drawing of a scavenger hunt map"
+            />
+            <h2>Let's make a scavenger hunt! - Linked List example</h2>
+          </div>
+          <h3>Adding a new item</h3>
+          <form class="LinkedListForm">
+            <label for="Add">
+              New clue
+            </label>
+            <input type="text" id="Add" />
+            <button type="submit">Add Clue</button>
+          </form>
+          <h3>Removing an item</h3>
+          <button class="LinkedList-remove">Remove Clue</button>
+          <h2>Our Scavenger Hunt</h2>
+          <div class="LinkedList">No clues yet :(</div>
         </section>
         <div class="ButtonContainer">
           <button class="Button PrevButton" disabled="disabled">Prev</button>
