@@ -159,3 +159,11 @@ fieldset {
   right: 2em;
   bottom: 0.5em;
 }
+
+.SetTheory {
+  display: flex;
+}
+
+.Set {
+  margin-right: 2em;
+}

@@ -5,6 +5,7 @@
       type="module"
       src="big-o-notation/big-o-notation-example.js"
     ></script>
+    <script type="module" src="set-theory/set-theory-example.js"></script>
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
@@ -44,6 +45,60 @@
           </button>
           <h2>Our baking progress</h2>
           <div class="BigONotation">You haven't started baking yet :(</div>
+        </section>
+        <section class="Screen Screen--purple">
+          <h2>
+            Let's find those cute instagram accounts! - Set theory example
+          </h2>
+          <h3>Add some accounts to our list</h3>
+          <form class="SetTheoryForm--add">
+            <label for="Account">
+              New account
+            </label>
+            <input type="text" id="Account" />
+            <fieldset>
+              <legend>
+                <h3>Choose the type of cute animal(s) featured</h3>
+              </legend>
+              <div class="Fieldset">
+                <div>
+                  <label for="Dog">Dog</label>
+                  <input
+                    type="checkbox"
+                    name="AnimalType"
+                    id="Dog"
+                    value="dog"
+                  />
+                </div>
+                <div>
+                  <label for="Cat">Cat</label>
+                  <input
+                    type="checkbox"
+                    name="AnimalType"
+                    id="Cat"
+                    value="cat"
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit">Add Account</button>
+          </form>
+          <h3>Let's do some set math</h3>
+          <button class="SetTheoryButton--intersect">
+            Find the intersection
+          </button>
+          <button class="SetTheoryButton--union">Find the union</button>
+          <button class="SetTheoryButton--difference">
+            Find the difference (dogs!)
+          </button>
+          <button class="SetTheoryButton--complement">
+            Find the relative complment (cats!)
+          </button>
+          <button class="SetTheoryButton--symmetricDifference">
+            Find the symmetric difference
+          </button>
+          <h2>The Instagram accounts we love</h2>
+          <div class="SetTheory">We haven't added any accounts yet :(</div>
         </section>
         <div class="ButtonContainer">
           <button class="Button PrevButton" disabled="disabled">Prev</button>
