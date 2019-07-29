@@ -14,6 +14,7 @@
     <script type="module" src="encapsulation/encapsulation-example.js"></script>
     <script type="module" src="abstraction/abstraction-example.js"></script>
     <script type="module" src="inheritance/inheritance-example.js"></script>
+    <script type="module" src="polymorphism/polymorphism-example.js"></script>
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
@@ -312,6 +313,58 @@
           <div class="Inheritance">
             You haven't picked your garden type yet :(
           </div>
+        </section>
+        <section class="Screen Screen--red">
+          <div class="Screen-header">
+            <img
+              class="Screen-thumbnail"
+              src="assets/images/YarnCrafts.png"
+              alt="Line drawing of common yarn crafts"
+            />
+            <h2>Let's craft! - Polymorphism example</h2>
+          </div>
+          <form class="PolymorphismForm">
+            <fieldset>
+              <legend><h3>Choose your favorite yarn craft</h3></legend>
+              <div class="Fieldset">
+                <div>
+                  <label for="Knit">Knitting</label>
+                  <input type="radio" name="YarnCraft" id="Knit" value="knit" />
+                </div>
+                <div>
+                  <label for="Crochet">Crocheting</label>
+                  <input
+                    type="radio"
+                    name="YarnCraft"
+                    id="Crochet"
+                    value="crochet"
+                  />
+                </div>
+                <div>
+                  <label for="Weave">Weaving</label>
+                  <input
+                    type="radio"
+                    name="YarnCraft"
+                    id="Weave"
+                    value="weave"
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <label for="RowLength">
+              Row length
+            </label>
+            <input type="number" id="RowLength" />
+            <label for="NumRows">
+              Number of rows
+            </label>
+            <input type="number" id="NumRows" />
+            <div>
+              <button type="submit">Create my fabric!</button>
+            </div>
+          </form>
+          <h2>Our Fabric</h2>
+          <div class="Polymorphism">You haven't created anything yet :(</div>
         </section>
         <div class="ButtonContainer">
           <button class="Button PrevButton" disabled="disabled">Prev</button>
