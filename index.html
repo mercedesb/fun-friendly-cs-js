@@ -1,10 +1,7 @@
 <html lang="en-US">
   <head>
     <title>Fun, Friendly CS</title>
-    <script
-      type="module"
-      src="big-o-notation/big-o-notation-example.js"
-    ></script>
+    <script type="module" src="big-o-notation/big-o-notation-example.js"></script>
     <script type="module" src="set-theory/set-theory-example.js"></script>
     <script type="module" src="recursion/recursion-example.js"></script>
     <script type="module" src="linked-list/linked-list-example.js"></script>
@@ -46,10 +43,7 @@
           <button class="BigOButton BigOButton--step6" disabled="disabled">
             Bake
           </button>
-          <button
-            class="BigOButton BigOButton--step7 BigOButton--last"
-            disabled="disabled"
-          >
+          <button class="BigOButton BigOButton--step7 BigOButton--last" disabled="disabled">
             Frost with Fibonacci number
           </button>
           <h2>Our baking progress</h2>
@@ -72,21 +66,11 @@
               <div class="Fieldset">
                 <div>
                   <label for="Dog">Dog</label>
-                  <input
-                    type="checkbox"
-                    name="AnimalType"
-                    id="Dog"
-                    value="dog"
-                  />
+                  <input type="checkbox" name="AnimalType" id="Dog" value="dog" />
                 </div>
                 <div>
                   <label for="Cat">Cat</label>
-                  <input
-                    type="checkbox"
-                    name="AnimalType"
-                    id="Cat"
-                    value="cat"
-                  />
+                  <input type="checkbox" name="AnimalType" id="Cat" value="cat" />
                 </div>
               </div>
             </fieldset>
@@ -101,7 +85,7 @@
             Find the difference (dogs!)
           </button>
           <button class="SetTheoryButton--complement">
-            Find the relative complment (cats!)
+            Find the relative complement (cats!)
           </button>
           <button class="SetTheoryButton--symmetricDifference">
             Find the symmetric difference
@@ -282,12 +266,7 @@
                 </div>
                 <div>
                   <label for="shade">My garden is shady</label>
-                  <input
-                    type="radio"
-                    name="lightNeeds"
-                    id="shade"
-                    value="shade"
-                  />
+                  <input type="radio" name="lightNeeds" id="shade" value="shade" />
                 </div>
               </div>
             </fieldset>
@@ -333,21 +312,11 @@
                 </div>
                 <div>
                   <label for="Crochet">Crocheting</label>
-                  <input
-                    type="radio"
-                    name="YarnCraft"
-                    id="Crochet"
-                    value="crochet"
-                  />
+                  <input type="radio" name="YarnCraft" id="Crochet" value="crochet" />
                 </div>
                 <div>
                   <label for="Weave">Weaving</label>
-                  <input
-                    type="radio"
-                    name="YarnCraft"
-                    id="Weave"
-                    value="weave"
-                  />
+                  <input type="radio" name="YarnCraft" id="Weave" value="weave" />
                 </div>
               </div>
             </fieldset>
@@ -400,21 +369,17 @@
         }
       }
 
-      document
-        .querySelector(".NextButton")
-        .addEventListener("click", function(e) {
-          activeScreenIndex++;
-          setActiveScreen();
-          setDisabledStateOfButtons();
-        });
+      document.querySelector(".NextButton").addEventListener("click", function(e) {
+        activeScreenIndex++;
+        setActiveScreen();
+        setDisabledStateOfButtons();
+      });
 
-      document
-        .querySelector(".PrevButton")
-        .addEventListener("click", function(e) {
-          activeScreenIndex--;
-          setActiveScreen();
-          setDisabledStateOfButtons();
-        });
+      document.querySelector(".PrevButton").addEventListener("click", function(e) {
+        activeScreenIndex--;
+        setActiveScreen();
+        setDisabledStateOfButtons();
+      });
     </script>
   </body>
 </html>
